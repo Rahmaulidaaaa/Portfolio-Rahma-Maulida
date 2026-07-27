@@ -7,7 +7,7 @@ import academicImage from "../assets/academic.jpg";
 import desainImage from "../assets/desain.jpeg";
 import mtcnaImage from "../assets/mtcna.png";
 import excelImage from "../assets/excel.png";
-import AIImage from "../assets/AI.png";
+import AIImage from "../assets/ai.png";
 import tamunifyImage from "../assets/tamunify.png";
 import portfolioImage from "../assets/portfolio.png";
 import lizstockImage from "../assets/lizstock.png";
