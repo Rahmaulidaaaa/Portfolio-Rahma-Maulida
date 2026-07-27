@@ -7,7 +7,7 @@ import academicImage from "../assets/academic.jpg";
 import desainImage from "../assets/desain.jpeg";
 import mtcnaImage from "../assets/mtcna.png";
 import excelImage from "../assets/excel.png";
-import AIImage from "../assets/ai.png";
+import aiImage from "../assets/ai.png";
 import tamunifyImage from "../assets/tamunify.png";
 import portfolioImage from "../assets/portfolio.png";
 import lizstockImage from "../assets/lizstock.png";
@@ -16,7 +16,7 @@ import desain1Image from "../assets/desain1.png";
 import desain5Image from "../assets/desain5.png";
 import aprilmopImage from "../assets/aprilmop.png";
 import iftarImage from "../assets/iftar.png";
-import BannerImage from "../assets/banner.png";
+import bannerImage from "../assets/banner.png";
 import twibbonImage from "../assets/twibbon.png";
 import cafeImage from "../assets/cafe.png";
 import clusterImage from "../assets/cluster.png";
@@ -234,7 +234,7 @@ const PORTFOLIO_ITEMS = [
     category: ["Graphic Design"],
     description: "Created attractive banners with clean and engaging layouts.",
     tech: ["Canva"],
-    image: BannerImage,
+    image: bannerImage,
     orientation: "portrait",
     demo: "#",
     drive: "#",
