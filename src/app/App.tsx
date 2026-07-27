@@ -20,6 +20,8 @@ import BannerImage from "../assets/Banner.png";
 import twibbonImage from "../assets/twibbon.png";
 import cafeImage from "../assets/cafe.png";
 import clusterImage from "../assets/cluster.png";
+import learningdocImage from "../assets/learningdoc.jpeg";
+import mrexcelImage from "../assets/mrexcel.png";
 import { SiGoogledrive } from "react-icons/si";
 import { BookOpen } from "lucide-react";
 import {
@@ -113,7 +115,7 @@ const PORTFOLIO_ITEMS = [
     image: portfolioImage,
     orientation: "landscape",
     demo: "#",
-    github: "#",
+    github: "https://github.com/Rahmaulidaaaa/Portfolio-Rahma-Maulida",
   },
    {
     id: 2,
@@ -146,7 +148,7 @@ const PORTFOLIO_ITEMS = [
     image: mathImage,
     orientation: "landscape",
     demo: "https://drive.google.com/file/d/1Mm2mWzQMCxMVQuImehEkZhK6Pl-MRL38/view?usp=sharing",
-    github: "https://drive.google.com/drive/folders/1zqzkSLH-Sf00orqv8AY5Pc0yptJtaaep",
+    drive: "https://drive.google.com/drive/folders/1zqzkSLH-Sf00orqv8AY5Pc0yptJtaaep",
   },  
   {
     id: 5,
@@ -172,26 +174,27 @@ const PORTFOLIO_ITEMS = [
   },  
     {
     id: 7,
-    title: "Learning",
+    title: "PERSONAL LEARNING DESIGN PROJECT (CASE STUDY)",
     category: ["Learning Design & Development"],
-    description: "dsggsdg",
-    tech: ["Canva, Microsoft Word, Power Point"],
-    image: "",
+    description: "Case study designing a 12-week onboarding program.",
+    tech: ["Microsoft Word, Power Point, Canva"],
+    image: learningdocImage,
     orientation: "landscape",
-    demo: "#",
-    SiGoogledrive: "#",
-  },  
-    {
-    id: 8,
-    title: "Excel",
-    category: ["Microsoft Excel"],
-    description: "dsggsdg",
-    tech: ["Canva, Microsoft Word, Power Point"],
-    image: "",
-    orientation: "landscape",
-    demo: "#",
-    github: "#",
+    demo: "https://onboarding-quiz-seven.vercel.app/",
+    drive: "https://drive.google.com/file/d/11M6q8pNEsmqnxntqqfFmM4PUEpdgM6rD/view?usp=sharing",
   }, 
+  {
+    id: 8,
+    title: "Microsoft Excel (Short Class Project)",
+    category: ["Microsoft Excel"],
+    description: "Case study designing a 12-week onboarding program.",
+    tech: ["Microsoft Word, Power Point, Canva"],
+    image: mrexcelImage,
+    orientation: "landscape",
+    demo: "https://docs.google.com/spreadsheets/d/1lnPUHTrkq8ABZnDb29t8pCN_cJi60TLx/edit?usp=sharing&ouid=111851313324926450283&rtpof=true&sd=true",
+    drive: "https://docs.google.com/spreadsheets/d/1lnPUHTrkq8ABZnDb29t8pCN_cJi60TLx/edit?usp=sharing&ouid=111851313324926450283&rtpof=true&sd=true",
+  },  
+
 {
     id: 9,
     title: "Instagram Social Media Design",
@@ -201,7 +204,7 @@ const PORTFOLIO_ITEMS = [
     image: desain1Image, 
     orientation: "portrait",
     demo: "#",
-    github: "#",
+    drive: "#",
   },  
            {
     id: 10,
@@ -212,7 +215,7 @@ const PORTFOLIO_ITEMS = [
     image: aprilmopImage,
     orientation: "portrait",
     demo: "#",
-    github: "#",
+    drive: "#",
   },  
          {
     id: 11,
@@ -223,7 +226,7 @@ const PORTFOLIO_ITEMS = [
     image: iftarImage,
     orientation: "portrait",
     demo: "#",
-    github: "#",
+    drive: "#",
   },  
          {
     id: 12,
@@ -234,11 +237,8 @@ const PORTFOLIO_ITEMS = [
     image: BannerImage,
     orientation: "portrait",
     demo: "#",
-    github: "#",
-  },  
-
-     
-         
+    drive: "#",
+  },       
 ];
 
 const CATEGORIES = ["All", "Web Development", "UI/UX Design", "Graphic Design", "Learning Design & Development", "Microsoft Excel"];
@@ -249,7 +249,7 @@ const EXPERIENCE_DATA = [
     company: "Lizstock.id",
     duration: "6 Months",
     period: "Jan - Juni 2026",
-    description: "Created brand assets, marketing collateral, social media content, and promotional materials to strengthen the restaurant's visual identity and digital presence.",
+    description: "Built a responsive front-end website for Lizstock with a modern and user-friendly interface.",
     icon: "",
   },
     {
@@ -781,7 +781,7 @@ const filteredPortfolio = useMemo(
     <br />
     Interested in Front-End Development, UI/UX Design,
     <br />
-    Graphic Designer and Learning Design.
+    Graphic Designer and Learning Design & Development.
   </span>
 </motion.p>
 
@@ -827,7 +827,7 @@ const filteredPortfolio = useMemo(
               { emoji: "", label: "Front End Developer", top: "8%", left: "-6%" },
               { emoji: "", label: "UI/UX Designer", top: "20%", right: "-8%" },
               { emoji: "", label: "Graphic Designer", bottom: "20%", left: "-6%" },
-              { emoji: "", label: "Learning Designer", bottom: "8%", right: "-4%" },
+              { emoji: "", label: "Learning Designert", bottom: "8%", right: "-4%" },
             ].map((badge, i) => (
               <motion.div
                 key={i}
@@ -1149,24 +1149,37 @@ const filteredPortfolio = useMemo(
                     </div>
 
                     <div className="flex gap-2">
-                      <motion.a
-                        href={item.demo}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 bg-[#EC4899] text-white text-xs font-bold rounded-lg hover:bg-[#DB2777] transition-colors"
-                      >
-                        <Eye size={13} /> Live Demo
-                      </motion.a>
-                      <motion.a
-                        href={item.github}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="flex items-center justify-center px-3 py-2 bg-[#0F172A] border border-white/10 text-[#94A3B8] text-xs rounded-lg hover:text-white hover:border-white/20 transition-all"
-                      >
-                        <Github size={14} />
-                      </motion.a>
-                    </div>
-                  </div>
+  <motion.a
+    href={item.demo}
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 bg-[#EC4899] text-white text-xs font-bold rounded-lg hover:bg-[#DB2777] transition-colors"
+  >
+    <Eye size={13} /> Live Demo
+  </motion.a>
+
+  {item.github && (
+    <motion.a
+      href={item.github}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="flex items-center justify-center px-3 py-2 bg-[#0F172A] border border-white/10 text-[#94A3B8] text-xs rounded-lg hover:text-white hover:border-white/20 transition-all"
+    >
+      <Github size={14} />
+    </motion.a>
+  )}
+
+  {item.drive && (
+    <motion.a
+      href={item.drive}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="flex items-center justify-center px-3 py-2 bg-[#0F172A] border border-white/10 text-[#94A3B8] text-xs rounded-lg hover:text-white hover:border-white/20 transition-all"
+    >
+      <SiGoogledrive size={14} />
+    </motion.a>
+  )}
+</div>                        </div>
                 </motion.div>
               ))}
             </AnimatePresence>
