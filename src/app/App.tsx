@@ -114,7 +114,7 @@ const PORTFOLIO_ITEMS = [
     tech: ["Figma", "TypeScript", "Tailwind CSS", "Vite", "shadcn/ui", "Framer Motion"],
     image: portfolioImage,
     orientation: "landscape",
-    demo: "#",
+    demo: "https://portfolio-rahma-maulida.vercel.app/",
     github: "https://github.com/Rahmaulidaaaa/Portfolio-Rahma-Maulida",
   },
    {
@@ -785,16 +785,19 @@ const filteredPortfolio = useMemo(
   </span>
 </motion.p>
 
-            <motion.div variants={fadeUp} className="flex flex-wrap gap-4 mb-12">
-              <motion.button
-                onClick={() => scrollTo("portfolio")}
-                whileHover={{ scale: 1.05, boxShadow: "0 0 40px rgba(236,72,153,0.4)" }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-[#EC4899] text-[#ffffff] font-bold rounded-full inline-flex items-center gap-2 shadow-[0_0_30px_rgba(236,72,153,0.25)] transition-all"
-              >
-                Download CV <Download size={18} />
-              </motion.button>
-            </motion.div>
+            <motion.a
+  href="https://drive.google.com/drive/folders/1m2IkRsKnzMOGUh5-Z50rbL77rt6uQLzM?usp=drive_link"
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{
+    scale: 1.05,
+    boxShadow: "0 0 40px rgba(236,72,153,0.4)",
+  }}
+  whileTap={{ scale: 0.95 }}
+  className="px-8 py-4 bg-[#EC4899] text-white font-bold rounded-full inline-flex items-center gap-2 shadow-[0_0_30px_rgba(236,72,153,0.25)] transition-all"
+>
+  Download CV <Download size={18} />
+</motion.a>
 
            
           </motion.div>
