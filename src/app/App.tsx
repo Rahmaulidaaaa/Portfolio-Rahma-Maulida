@@ -16,7 +16,7 @@ import desain1Image from "../assets/desain1.png";
 import desain5Image from "../assets/desain5.png";
 import aprilmopImage from "../assets/aprilmop.png";
 import iftarImage from "../assets/iftar.png";
-import BannerImage from "../assets/Banner.png";
+import BannerImage from "../assets/banner.png";
 import twibbonImage from "../assets/twibbon.png";
 import cafeImage from "../assets/cafe.png";
 import clusterImage from "../assets/cluster.png";
