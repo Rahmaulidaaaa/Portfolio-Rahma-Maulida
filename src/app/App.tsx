@@ -316,7 +316,7 @@ const CERTIFICATES_DATA = [
     title: "AI and Automation with n8n",
     issuer: "MySkill",
     year: "2026",
-    image: AIImage,
+    image: aiImage,
   },
 ];
 
