@@ -47,10 +47,11 @@ const SKILLS_DATA = [
     skills: [
       "HTML",
       "CSS",
-      "JavaScript",
-      "React",
-      "Next.js",
+      "TypeScript",
+      "CSS",
       "Tailwind CSS",
+      "schdn/ui",
+      "Framer Motion",
     ],
   },
   {
@@ -61,14 +62,18 @@ const SKILLS_DATA = [
       "Wireframing",
       "Prototype",
       "Design System",
+      "Low-Fidelity Design",
+      "High-Fidelity Design",
+      "Design Thinking",
+      "Interaction Design",
+      "Responsive Design",
     ],
   },
   {
     type: "Hard Skills",
     category: "Graphic Design",
     skills: [
-      "Photoshop",
-      "Illustrator",
+      "Figma",
       "Canva",
       "CorelDRAW",
     ],
@@ -77,10 +82,10 @@ const SKILLS_DATA = [
     type: "Hard Skills",
     category: "Learning Design",
     skills: [
-      "Articulate Storyline",
+      "Microsoft Word",
+      "Microsoft Power Point",
       "Canva",
-      "Moodle",
-      "H5P",
+      "Capcut",
     ],
   },
   {
@@ -93,6 +98,7 @@ const SKILLS_DATA = [
       "Problem Solving",
       "Time Management",
       "Adaptability",
+      "Creativity",
     ],
   },
 ];
@@ -786,7 +792,7 @@ const filteredPortfolio = useMemo(
 </motion.p>
 
             <motion.a
-  href="https://drive.google.com/drive/folders/1m2IkRsKnzMOGUh5-Z50rbL77rt6uQLzM?usp=drive_link"
+  href="https://drive.google.com/file/d/1NfClhAk1K1-nBvTxpFq3Tziy9zumx53l/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   whileHover={{
